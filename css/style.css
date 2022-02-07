@@ -260,7 +260,7 @@ figure img:hover,
     display: none;
 }
 
-.show{
+.rply_show{
     margin: 2px 0;
     transition: var(--eff);
     display: block;
