@@ -11,7 +11,6 @@
     <title>Jay's Blog</title>
   </head>
   <body>
-    <div style="background-image: url('images/pex.jpg'); background-size: cover; background-attachment:fixed;">
     <header class="main_header">
         <div class="d-flex justify-content-center align-items-center flex-column py-3">
                 <h1 class="main_heading">BLOGBOARD</h1> 
@@ -190,12 +189,14 @@
 
             <div class="col-lg-3 col-md-7 col-11  justify-content-end m-lg-0 m-auto ">
               <div class="row gy-5 left_div__blog">
-                <div class="col-12 card about_me_div shadow">
+                
+                <div class="col-12 about_me_div shadow">
                   <p>Jay Jagtap</p>
                   <p>I'm a third year Computer Engineer student studying at RMD Sinhgad Technical Institute,Pune. I love to work on Web Development Projects because I love to solve the design problem and find easy and better
                     solutions.</p>
                 </div>
-                <div class="popular_post">
+
+                <div class="popular_post shadow">
                   <div class="right_div_title py-4 pl-2">
                     <h2>Popular Posts</h2>
                   </div>
@@ -205,11 +206,118 @@
                       </div>
                       <div class="col-9">
                         <h3>Bill Gates</h3>
-                        <p>CEO Microsoft</p>
+                        <p class="text-capitalize">Microsoft</p>
+                      </div>
+                      <div class="col-3 popular_post__img2 py-2 pl-2">
+                      </div>
+                      <div class="col-9">
+                        <h3>Mark Zuckerberg</h3>
+                        <p class="text-capitalize">CEO Microsoft</p>
+                      </div>
+                      <div class="col-3 popular_post__img3 py-2 pl-2">
+                      </div>
+                      <div class="col-9">
+                        <h3>Jeff Bezos</h3>
+                        <p class="text-capitalize">Amazon</p>
+                      </div>
+                      <div class="col-3 popular_post__img4 py-2 pl-2">
+                      </div>
+                      <div class="col-9">
+                        <h3>Steve Jobs</h3>
+                        <p class="text-capitalize">Apple</p>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                <div class="right_div_post shadow">
+                  <div class="right_div_title py-4 pl-2">
+                    <h2>Advertise</h2>
+                  </div>
+                  <div class="right_sub_div">
+                    <div class="advertise_img  bg-light">
+                      <p>Ad goes here</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="right_div_post">
+                  <div class="right_div_title py-4 pl-2">
+                    <h2>Tags</h2>
+                  </div>
+                  <div class="tags_main right_sub__div">
+                    <a href="#" class="badge shadow text-capitalize">HTML</a>
+                    <a href="#" class="badge shadow text-capitalize">CSS</a>
+                    <a href="#" class="badge shadow text-capitalize">JS</a>
+                    <a href="#" class="badge shadow text-capitalize">Django</a>
+                    <a href="#" class="badge shadow text-capitalize">Python</a>
+                    <a href="#" class="badge shadow text-capitalize">Java</a>
+                    <a href="#" class="badge shadow text-capitalize">C++</a>
+                    <a href="#" class="badge shadow text-capitalize">PHP</a>
+                  </div>
+                </div>
+              
+                <div class="right_sub_div shadow">
+                  <div class="right_div_title py-4 pl-2 ">
+                    <h2>Inspiration</h2>
+                </div>
+                <div class="right_sub__div">
+                    <div class="row gx-3">
+                        <div class="col-6">
+                            <figure>
+                                <img src="https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-fluid shadow">
+                            </figure>
+                        </div>
+                        <div class="col-6">
+                            <figure>
+                                <img src="https://images.pexels.com/photos/34140/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid shadow">
+                            </figure>
+                        </div>
+                        <div class="col-6">
+                            <figure>
+                                <img src="https://images.pexels.com/photos/38547/office-freelancer-computer-business-38547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid shadow">
+                            </figure>
+                        </div>
+                        <div class="col-6">
+                            <figure>
+                                <img src="https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-fluid shadow">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="right_div_post shadow">
+            <div class="right_div__title py-4 pl-2 ">
+              <h2>Follow Me</h2>
+            </div>
+            <div class="right_sub_div d-flex justify-content-around">
+              <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+              <a href="#"> <i class="fab fa-3x fa-instagram"></i></a>
+              <a href="#"> <i class="fab fa-3x fa-github-square"></i> </a>
+              <a href="#"> <i class="fab fa-3x fa-twitter-square"></i></a>
+              <a href="#"> <i class="fab fa-3x fa-youtube-square"></i> </a>
+              <a href="#"> <i class="fab fa-3x fa-linkedin"></i></a>
+            </div>
+            </div>
+
+            <div class="right_div_post shadow">
+            <div class="right_div__title py-4 pl-2 ">
+              <h2>Subscribe</h2>
+            </div>
+            <div class="right_sub_div">
+              <form>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Enter your e-mail below and get notified on the latest blog posts.</label>
+                    <input type="email" class="form-control mt-2" id="exampleFormControlInput1" placeholder="name@gmail.com">
+                </div>
+                <div class="col-12">
+                    <button class="subs_btn d-block" type="submit">Subscribe</button>
+                </div>
+            </form>
+            </div>
+            </div>
+
               </div>
             </div>
              
@@ -217,6 +325,9 @@
         </div>
       </div>
     </div>
+    <footer>
+      <p class="text-center py-5 bg-light">designed By ©Jay Jagtap</p>
+  </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

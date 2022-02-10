@@ -265,3 +265,66 @@ figure img:hover,
     transition: var(--eff);
     display: block;
 }
+
+.about_me_div{
+    width: auto;
+    height: 40rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, transparent 67%, rgba(208, 206, 207, 0.8)33%), url('../images/jay.jpg');
+}
+
+.about_me_div p:first-child{
+    font-size: 2.0rem;
+    padding-bottom: 0.2rem;
+}
+.about_me_div p{
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    color: #000;
+}
+
+.right_div_title{
+    background: #fff;
+    box-shadow: 0 1rem 3rem -1rem rgba(225, 225, 225, 0.7);
+}
+
+.right_div_title h2{
+    font-size: 2.5rem;
+    padding-left: 2rem;
+}
+
+.popular_post__img1 {
+    background-image: url('../images/bg.png');
+    background-size: var(--bg-size);
+}
+
+.popular_post__img2 {
+    background-image: url('../images/mz.jpg');
+    background-size: var(--bg-size);
+}
+
+.popular_post__img3 {
+    background-image: url('../images/jb.jpg');
+    background-size: var(--bg-size);
+}
+
+.popular_post__img4 {
+    background-image: url('../images/sj.jpg');
+    background-size: var(--bg-size);
+}
+
+.right_sub_div {
+    background: #fff;
+}
+
+.right_sub_div .row {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.right_sub_div .row:last-child {
+    margin-bottom: 0;
+}
