@@ -40,7 +40,7 @@ a:hover{
 }
 
 body{
-    background-color: hsl(84%, 3%, 94%);
+    background-color: hsl(84%, 0%, 94%);
 }
 
 .main_heading{
@@ -287,7 +287,7 @@ figure img:hover,
 }
 
 .right_div_title{
-    background: #fff;
+    background: #d0cecf;
     box-shadow: 0 1rem 3rem -1rem rgba(225, 225, 225, 0.7);
 }
 
@@ -318,13 +318,20 @@ figure img:hover,
 
 .right_sub_div {
     background: #fff;
+    padding: 2.5rem 1rem;
 }
 
 .right_sub_div .row {
     margin-bottom: 2rem;
     padding-left: 1rem;
+
 }
 
 .right_sub_div .row:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
+}
+
+.row>.right_div_post {
+    padding-left: 0;
+    padding-right: 0;
 }
