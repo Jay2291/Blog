@@ -40,7 +40,7 @@ a:hover{
 }
 
 body{
-    background-color: hsl(84%, 0%, 94%);
+    background-color: hsl(184, 6%, 95%);
 }
 
 .main_heading{
@@ -85,17 +85,17 @@ body{
     font-family: var(--title);
 }
 
-.animateWord div{
+.animateWord div {
     overflow: hidden;
     position: relative;
     float: right;
-    height: 8.6rem;
+    height: 8rem;
     padding-top: 1rem;
     margin-top: -1rem;
 }
 
-.animateWord li{
-    font-weight: bold;
+.animateWord div li {
+    font-weight: 700;
     padding: 0 1rem;
     height: 4.5rem;
     margin-bottom: 4.5rem;
@@ -103,75 +103,95 @@ body{
     font-family: var(--title);
 }
 
-.flip{
-    -webkit-animation: flip4 10s cubic-bezier(0.23, 0.1, 0.32, 1.2) infinite;
-    animation: flip4 10s cubic-bezier(0.23, 0.1, 0.32, 1.2)  infinite;
+.flip {
+    -webkit-animation: flip 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+    animation: flip 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
 }
 
-@-webkit-keyframes flip4{
-    0%{
+@-webkit-keyframes flip {
+    0% {
         margin-top: -360px;
     }
-    5%{
+
+    5% {
         margin-top: -270px;
     }
-    25%{
+
+    25% {
         margin-top: -270px;
     }
-    30%{
+
+    30% {
         margin-top: -180px;
     }
-    50%{
+
+    50% {
         margin-top: -180px;
     }
-    55%{
+
+    55% {
         margin-top: -90px;
     }
-    75%{
+
+    75% {
         margin-top: -90px;
     }
-    80%{
+
+    80% {
         margin-top: 0px;
     }
-    99.99%{
+
+    99.99% {
         margin-top: 0px;
     }
-    100%{
+
+    100% {
         margin-top: -270px;
     }
+
 }
 
-@keyframes flip4 {
-    0%{
+@keyframes flip {
+    0% {
         margin-top: -360px;
     }
-    5%{
+
+    5% {
         margin-top: -270px;
     }
-    25%{
+
+    25% {
         margin-top: -270px;
     }
-    30%{
+
+    30% {
         margin-top: -180px;
     }
-    50%{
+
+    50% {
         margin-top: -180px;
     }
-    55%{
+
+    55% {
         margin-top: -90px;
     }
-    75%{
+
+    75% {
         margin-top: -90px;
     }
-    80%{
+
+    80% {
         margin-top: 0px;
     }
-    99.99%{
+
+    99.99% {
         margin-top: 0px;
     }
-    100%{
+
+    100% {
         margin-top: -270px;
     }
+
 }
 
 .main_header__div button{
@@ -195,7 +215,8 @@ button:hover{
 
 figure img:hover,
 .left_div__rply:hover,
-.left_div__like:hover{
+.left_div__like:hover,
+.subs_btn:hover{
     transform: translateY(-0.5rem);
     box-shadow: 0 1rem 3rem -1rem rgba(0, 0, 0, 0.7);
 }
@@ -321,6 +342,10 @@ figure img:hover,
     padding: 2.5rem 1rem;
 }
 
+.right_sub_div p {
+    font-size: medium;
+}
+
 .right_sub_div .row {
     margin-bottom: 2rem;
     padding-left: 1rem;
@@ -334,4 +359,104 @@ figure img:hover,
 .row>.right_div_post {
     padding-left: 0;
     padding-right: 0;
+}
+
+.tags_main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4rem, 8rem));
+    grid-gap: .5rem;
+}
+
+.tags_main a{
+    font-size: 1.7rem;
+    line-height: 170%;
+    font-weight: lighter;
+    background: #6c757c;
+    transition: var(--eff);
+}
+
+.tags_main a:hover {
+    color: var(--btn-font-color);
+    background-color: var(--btn-color);
+}
+
+.advertise_img {
+    min-width: 10rem;
+    height: 20rem;
+    display: grid;
+    place-items: center;
+}
+
+.fab {
+    color: #000;
+}
+
+.fab:hover {
+    color: var(--btn-color);
+    transform: rotate(360deg);
+}
+
+.right_sub_div #exampleFormControlInput1 {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0;
+    font-size: medium;
+}
+
+.form-label {
+    font-size: medium;
+}
+
+.subs_btn {
+    color: #000;
+    border-width: 0;
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    display: block;
+    background-color:  var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+}
+
+footer p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: small;
+}
+
+@media(max-width:998px) {
+    html {
+        font-size: 60%;
+    }
+
+    .left_div__blog {
+        margin: 3rem 0;
+    }
+
+    p,
+    label,
+    input::placeholder {
+        font-size: 2.2rem;
+    }
+
+    :root {
+        --btn-font: 2rem;
+    }
+
+    .main_header__div h2 {
+        font-size: 4.5rem;
+    }
+
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .left_div__blog {
+        margin: 3rem 0;
+    }
+
 }
