@@ -396,67 +396,67 @@
         }
       }, false);
 
-      const like = document.getElementById('like_btn2');
+      const like2 = document.getElementById('like_btn2');
 
-      const singleClick = () => {
-        like.style.fontWeight = 'bold';
-        like.style.background = '#3282b8';
-        like.style.color = '1b262c';
-        like.innerHTML = "<i class='fas fa-thumbs-up'></i>Liked";
+      const singleClick2 = () => {
+        like2.style.fontWeight = 'bold';
+        like2.style.background = '#3282b8';
+        like2.style.color = '1b262c';
+        like2.innerHTML = "<i class='fas fa-thumbs-up'></i>Liked";
       }
 
-      const doubleClick = () => {
-        like.style.fontWeight = 'normal';
-        like.style.background = '#bbe1fa';
-        like.style.color = 'fff';
-        like.innerHTML = "Like";
+      const doubleClick2 = () => {
+        like2.style.fontWeight = 'normal';
+        like2.style.background = '#bbe1fa';
+        like2.style.color = 'fff';
+        like2.innerHTML = "Like";
       }
 
-      var clickCount = 0;
+      var clickCount2 = 0;
 
       like.addEventListener('click', function() {
-        clickCount++;
-        if(clickCount=== 1) {
-          singleClickTimer = setTimeout(function() {
-            clickCount = 0;
-            singleClick();
+        clickCount2++;
+        if(clickCount2=== 1) {
+          singleClickTimer2 = setTimeout(function() {
+            clickCount2 = 0;
+            singleClick2();
           }, 400);
-        }else if(clickCount === 2) {
-          clearTimeout(singleClickTimer);
-          clickCount = 0;
-          doubleClick();
+        }else if(clickCount2 === 2) {
+          clearTimeout(singleClickTimer2);
+          clickCount2 = 0;
+          doubleClick2();
         }
       }, false);
 
-      const like = document.getElementById('like_btn3');
+      const like3 = document.getElementById('like_btn3');
 
-      const singleClick = () => {
-        like.style.fontWeight = 'bold';
-        like.style.background = '#3282b8';
-        like.style.color = '1b262c';
-        like.innerHTML = "<i class='fas fa-thumbs-up'></i>Liked";
+      const singleClick3 = () => {
+        like3.style.fontWeight = 'bold';
+        like3.style.background = '#3282b8';
+        like3.style.color = '1b262c';
+        like3.innerHTML = "<i class='fas fa-thumbs-up'></i>Liked";
       }
 
-      const doubleClick = () => {
-        like.style.fontWeight = 'normal';
-        like.style.background = '#bbe1fa';
-        like.style.color = 'fff';
-        like.innerHTML = "Like";
+      const doubleClick3 = () => {
+        like3.style.fontWeight = 'normal';
+        like3.style.background = '#bbe1fa';
+        like3.style.color = 'fff';
+        like3.innerHTML = "Like";
       }
 
-      var clickCount = 0;
+      var clickCount3 = 0;
 
-      like.addEventListener('click', function() {
-        clickCount++;
-        if(clickCount=== 1) {
-          singleClickTimer = setTimeout(function() {
-            clickCount = 0;
-            singleClick();
+      like3.addEventListener('click', function() {
+        clickCount3++;
+        if(clickCount3=== 1) {
+          singleClickTimer3 = setTimeout(function() {
+            clickCount3 = 0;
+            singleClick3();
           }, 400);
-        }else if(clickCount === 2) {
-          clearTimeout(singleClickTimer);
-          clickCount = 0;
-          doubleClick();
+        }else if(clickCount3 === 2) {
+          clearTimeout(singleClickTimer3);
+          clickCount3 = 0;
+          doubleClick3();
         }
       }, false);
 
